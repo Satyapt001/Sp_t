@@ -142,8 +142,8 @@
 
 @media (max-width:630px) {
     .profile_1st-pg__pic-container {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
     .profile_1st-pg{
         background-color: #fff;
