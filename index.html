@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src=""></script>
+    <title>SPT</title>
+</head>
+
+<body>
+    <!-- Navigation bar  -->
+    <div class="title_bar">
+        <div class="OG_name">
+            <h1>Sp_T</h1>
+        </div>
+
+        <div class="items">
+            <div class="off-screen-menu">
+                <ul class="items__holder">
+                    <li><a class="items_link" href="#profile">Profile</a></li>
+                    <li><a class="items_link" href="#Education">Education</a></li>
+                    <li><a class="items_link" href="#skills">Skills</a></li>
+                    <li><a class="items_link" href="#projects">Projects</a></li>
+                    <li><a class="items_link" href="#contact">Contact</a></li>
+                    <li><a class="items_link" href="#NCC">NCC</a></li>
+                </ul>
+            </div>
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 1st page content -->
+    <section class="profile_1st-pg">
+        <div class="profile_1st-pg__pic-container">
+            <img src="asset/(1).png" alt="profile_image">
+        </div>
+        <div class="profile_1st-pg__text">
+            <h2 class="profile_1st-pg__text-p1">Hello,Iam</h2>
+            <h1 class="profile_1st-pg__name">Satyapriya Tripathy</h1>
+            <p class="profile_1st-pg__text-p2">Frontend Developer</p>
+            <div id="socials-container">
+                <img src="asset/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/satyapt/'" />
+                <img src="asset/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/Satyapt001'" />
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asset/satyapriyaTripathy.pdf')">
+                    Download CV
+                </button>
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- second page -->
+    <section id="profile">
+        <div class="container_pg--2nd">
+            <div class="vertical-heading">
+                <h1><span class="first-letter"></span>Message</h1>
+            </div>
+            <div class="description">
+                <p><span class="w_letter">W</span>elcome to this website.I am a college student pursuing Bca in the 3rd
+                    year of
+                    college.I have always been fascinated by the power of technology to transform ideas into reality.
+                    My journey into the realm of software engineering began with a curiosity
+                    that has now evolved into a deep-seated passion. I thrive on challenges,constantly
+                    seeking opportunities to learn and grow in the ever-evolving field of technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page -->
+    <section id="Education">
+        <div class="container">
+            <main class="row">
+                <!-- Education section -->
+                <section class="col">
+                    <header class="title">
+                        <h1>EDUCATION</h1>
+                    </header>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2022-2025</h4>
+                            <h3><span class="disappear">Bachelor's in computer Application</span>(BCA)-Graduation</h3>
+                            <p>Imperial college,Bargarh</p>
+                        </div>
+                        <div class="box">
+                            <h4>2018-2020</h4>
+                            <h3>Science-Higher secondary</h3>
+                            <p>Rotary Public School,Bargarh</p>
+                        </div>
+                        <div class="box">
+                            <h4>...2018</h4>
+                            <h3>Schooling</h3>
+                            <p>Rotary public School,Bargarh</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
