@@ -16,6 +16,7 @@ body {
   padding: 0;
 
 }
+
 /* sticky styles */
 .sticky {
   position: fixed;
@@ -23,6 +24,7 @@ body {
   width: 100%;
   z-index: 1000;
 }
+
 /* navbar */
 .title_bar {
   width: 100%;
@@ -31,8 +33,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3em;
-  /* border-bottom: 1px solid rgb(34, 37, 49); */
+  padding:0em 2em;
+  border-bottom: 1px solid rgb(34, 37, 49);
 }
 
 .OG_name {
@@ -260,11 +262,10 @@ body {
 }
 
 /*Third page*/
-
 .container {
   width: 100%;
   padding: 25px 10%;
-  margin: 6em 0;
+  margin:0 0 6em 0em;
 }
 
 .title h1 {
@@ -286,24 +287,22 @@ body {
   position: relative;
   padding: 10px;
   border-radius: 0px 100px 100px 100px;
-  border: 2px solid black;
   background-color: #fbaa44;
   color:white;
   cursor: pointer;
   transition: all 0.4s;
-  margin: 5px 0 15px 0;
+  margin: 25px 0 15px 0;
 }
 .box_holder{
   line-height: 0.8em;
-  margin:-1em 4em 0 4em;
+  margin:0em 4em 0 4em;
 }
 .img_timer.img_timer{
-  max-width:3.5%;
+  max-width:2.5%;
   margin-right:0.5em;
 }
 
 .col .contents .box:hover {
-
   border: 1px solid transparent;
   transition: all 0.4s ease;
 }
@@ -336,7 +335,7 @@ body {
 /* fourth page */
 #skills{
   border:2px solid #fbaa44;
-  margin:0 4em;
+  margin:0em 4em 4em 4em;
   padding:20px;
 }
 
@@ -350,22 +349,18 @@ body {
 }
 
 .mother_container {
-  /* gap: 5em; */
   justify-content: space-between;
-  border: 1px solid blue;
   display: flex;
 }
 
+
 .skill-category--web_tech {
-  border: 1px solid green;
-  /* margin-left: 1em; */
-  width: 40%;
+  width: 49%;
 }
-.other-holder--tech .other-holder--tech{
-  max-width:60%;
+.other-holder--tech{
+  width:49.95%;
 }
 .skill-name {
-  border:2px solid;
   font-size: 1.4em;
   font-weight: 600;
   width: 50px;
@@ -386,7 +381,8 @@ body {
 }
 
 .percentage {
-  font-size: 13px;
+  font-weight: 800;
+  font-size: 11px;
   border-radius: 120px;
   border:2px solid #fbaa44;
   padding:0.5em;
@@ -401,13 +397,11 @@ body {
   width: 40px;
   background-color: #ccc;
   padding: 0.4rem;
-  /* margin-right: 1rem; */
   border-radius: 4px;
 }
 
 .skill-category--toolsNTech,
 .skill-category--otherLang {
-    border: 1px solid indigo;
     width:100%;
 }
 
@@ -426,7 +420,7 @@ body {
     color:#ffffff;
     text-transform: uppercase;
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .skill {
@@ -436,14 +430,88 @@ body {
 }
 
 
-.skill-box {
+.skill-box  {
   display: inline-block;
   background-color: #f4f4f4;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 4px;
-  width: calc(25% - 2rem);
+  width: calc(100% - 2rem);
   box-sizing: border-box;
   text-align: center;
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
+/* contact Me */
+.contact--container {
+  width: 100%;
+  padding: 25px 10%;
+  margin:0 auto;
+}
+.contact--container h1 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #fbaa44;
+  font-style: italic;
+  border-bottom: 2px solid;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fbaa44;
+  color: #ffffff;
+  border: none;
+  transition: 0.3sec ease;
+}
+
+#response-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  display: none;
+  margin: 20px auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #fbaa44;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
