@@ -146,6 +146,9 @@
         margin: 0;
         width: 100%;
     }
+    .other-holder--tech{
+        width:100%;
+    }
 
     .drag-icon>img {
         width: 60px;
@@ -154,6 +157,7 @@
     .skill-category--web_tech+.other-holder {
         margin-left: 0em;
     }
+
 }
 
 @media(min-width:1003px) {
@@ -239,7 +243,6 @@
     }
 
     .container {
-        border: 1px solid red;
         margin: 1em 0;
     }
 
