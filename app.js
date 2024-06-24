@@ -1,3 +1,4 @@
+//menuBar
 const hamMenu = document.querySelector(".ham-menu");
 
 const offScreenMenu = document.querySelector(".off-screen-menu");
@@ -37,30 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollItems.forEach(item => {
       const clone = item.cloneNode(true);
       scrollContent.appendChild(clone);
-  });
-});
-
-//night mode
-document.addEventListener('DOMContentLoaded', (event) => {
-  const toggleContainer = document.getElementById('toggleContainer');
-  const body = document.body;
-
-  // Check for saved user preference, if any, on load of the website
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme) {
-      body.classList.add(currentTheme);
-  }
-
-  toggleContainer.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      body.classList.toggle('light-mode');
-
-      // Save the user's preference to local storage
-      let theme = 'light-mode';
-      if (body.classList.contains('dark-mode')) {
-          theme = 'dark-mode';
-      }
-      localStorage.setItem('theme', theme);
   });
 });
 
