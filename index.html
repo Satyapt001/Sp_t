@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
     <title>SPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <!-- Navigation bar  -->
 <div class="title_bar" id="NavBar">
     <div class="OG_name">
         <h1>Sp_T</h1>
     </div>
-    
+
     <div class="items">
         <div class="off-screen-menu">
             <ul class="items__holder">
-                <li><a class="items_link" href="#profile">Home</a></li>
+                <li><a class="items_link" href="#Home">Home</a></li>
                 <li><a class="items_link" href="#Education">Education</a></li>
                 <li><a class="items_link" href="#skills">Skills</a></li>
                 <li><a class="items_link" href="#projects">Projects</a></li>
@@ -42,7 +42,7 @@
 </div>
 
 <!-- 1st page content -->
-<section class="profile_1st-pg">
+<section id="Home" class="profile_1st-pg">
 
     <div class="profile_1st-pg__pic-container">
         <img class="prf_img" src="asset/(1).png" alt="profile_image">
@@ -89,7 +89,7 @@
         <div class="scroll-item">• Contact for</div>
         <div class="scroll-item">Frontend project</div>
         <div class="scroll-item">Ideas turn into reality </div>
-        
+
     </div>
 </div>
 
@@ -204,9 +204,34 @@
         </div>
     </div>
 </section>
+
+<!--contact section-->
+<section id="contact" >
+    <div class="contact--container">
+        <h1 class="contact-h">Contact Me</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="project">Project Details:</label>
+            <textarea id="project" name="project" rows="7" placeholder="please,describe your idea" required></textarea>
+
+            <label for="file">Attach Files:</label>
+            <input type="file" id="file" name="file" multiple>
+
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="loading-spinner" class="spinner"></div>
+        <p id="response-message"></p>
+    </div>
+</section>
 <script src="app.js"></script>
 <script src="js/sticky.js"></script>
 <script src="js/infintescroll.js"></script>
+<script src="js/contact.js"></script>
 </body>
 
 </html>
