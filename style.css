@@ -253,9 +253,9 @@ body {
 }
 
 .description {
-  text-align: left;
-  font-weight: 500;
-  font-size: 1.4em;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.2em;
 }
 
 .w_letter {
