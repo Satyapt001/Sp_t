@@ -1,3 +1,3 @@
-<h1>//*********feel free to contribute**************//</h1>
+This is a personal portfolio project feel free to Fork to contribute.
 
-This project is Under development !!
+This project is Under development ❗
