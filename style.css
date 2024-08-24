@@ -235,6 +235,7 @@ body {
 
 #profile {
   border: 1px solid;
+  border-radius: 100px;
   background-color: #fbaa44;
   color: white;
   padding: 150px;
